@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/routing/app_router.dart';
 import 'package:gym/core/routing/routes.dart';
@@ -19,7 +18,7 @@ class GymApp extends StatelessWidget {
         initialRoute: Routes.loginScreen,
         debugShowCheckedModeBanner: false,
         title: 'Gym App',
-        theme: ThemeData(primaryColor: colorsManegar.mainorange),
+        theme: ThemeData(primaryColor: colorsManegar.mainOrange),
       ),
     );
   }
