@@ -26,6 +26,10 @@ class $AssetsImagesGen {
   AssetGenImage get gymLogoPng =>
       const AssetGenImage('assets/images/gym-logo.png');
 
+  /// File path: assets/images/gym-orange-background.png
+  AssetGenImage get gymOrangeBackground =>
+      const AssetGenImage('assets/images/gym-orange-background.png');
+
   /// File path: assets/images/gympro-logo.jpg
   AssetGenImage get gymproLogo =>
       const AssetGenImage('assets/images/gympro-logo.jpg');
@@ -35,6 +39,7 @@ class $AssetsImagesGen {
     gymAuthBackground,
     gymLogoJpg,
     gymLogoPng,
+    gymOrangeBackground,
     gymproLogo,
   ];
 }

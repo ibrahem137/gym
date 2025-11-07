@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/helpers/app_regex.dart';
+import 'package:gym/core/helpers/extensions.dart';
+import 'package:gym/core/routing/routes.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_text_button.dart';
 import 'package:gym/core/widgets/app_text_form_field.dart';
 import 'package:gym/features/auth/ui/widgets/check_box.dart';
+import 'package:gym/features/auth/ui/widgets/text_span.dart';
 import 'package:gym/gen/assets.gen.dart';
 
 class BigContainerOfLogin extends StatefulWidget {
-  BigContainerOfLogin({super.key});
+  const BigContainerOfLogin({super.key});
 
   @override
   State<BigContainerOfLogin> createState() => _BigContainerOfLoginState();
@@ -72,6 +75,7 @@ class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
               alignment: Alignment.centerLeft,
               child: Text('Passowrd', style: TextStyles.font13Blackw600),
             ),
+            SizedBox(height: 5.h),
             AppTextFormField(
               prefixIcon: Icon(Icons.lock),
               controller: passwordcontroller,
@@ -102,20 +106,27 @@ class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
 
               children: [
                 CheckBox(),
-                GestureDetector(
+                TextButton(
                   child: Text(
                     'Forgot Password?',
-                    style: TextStyles.font13lightblue600,
+                    style: TextStyles.font13mainOrange600,
                   ),
+
+                  onPressed: () {
+                    context.pushNamed(Routes.forgotpasswordScreen);
+                  },
                 ),
               ],
             ),
             SizedBox(height: 20.h),
             AppTextButton(
+              backgroundColor: colorsManegar.mainOrange,
               buttonText: 'LogIn',
               textStyle: TextStyles.font13white800,
               onPressed: () {},
             ),
+            SizedBox(height: 18),
+            LoginFooter(),
           ],
         ),
       ),

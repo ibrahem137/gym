@@ -20,10 +20,10 @@ class TextStyles {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
-  static TextStyle font13lightblue600 = TextStyle(
+  static TextStyle font13mainOrange600 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w600,
-    color: colorsManegar.lightblue,
+    color: colorsManegar.mainOrange,
   );
   static TextStyle font13white800 = TextStyle(
     fontSize: 13.sp,
