@@ -57,7 +57,7 @@ class AppTextFormField extends StatelessWidget {
               focusedBorder ??
               OutlineInputBorder(
                 borderSide: const BorderSide(
-                  color: colorsManegar.darkblur,
+                  color: ColorsManegar.darkblue,
                   width: 1.3,
                 ),
                 borderRadius: BorderRadius.circular(30.0),
@@ -96,7 +96,7 @@ class AppTextFormField extends StatelessWidget {
         obscureText: isObscureText ?? false,
         style: TextStyle(
           fontSize: 14,
-          color: colorsManegar.darkgray,
+          color: ColorsManegar.darkgray,
           fontWeight: FontWeight.w500,
         ),
         validator: (value) {

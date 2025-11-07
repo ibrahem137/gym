@@ -19,7 +19,7 @@ class GymApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Gym App',
         theme: ThemeData(
-          primaryColor: colorsManegar.mainOrange,
+          primaryColor: ColorsManegar.mainOrange,
         ),
       ),
     );

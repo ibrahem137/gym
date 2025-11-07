@@ -29,7 +29,7 @@ class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
       width: 400.w,
       height: 750.h,
       decoration: BoxDecoration(
-        color: colorsManegar.semewhite,
+        color: ColorsManegar.semewhite,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
@@ -56,7 +56,7 @@ class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
             ),
             SizedBox(height: 5),
             AppTextFormField(
-              prefixIcon: Icon(Icons.email, color: colorsManegar.darkgray),
+              prefixIcon: Icon(Icons.email, color: ColorsManegar.darkgray),
               hintText: ' Enter Your Email ',
               validator: (value) {
                 if (value == null ||
