@@ -40,8 +40,8 @@ class AppTextFormField extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: const Color.fromARGB(255, 0, 0, 0).withOpacity(1),
-            blurRadius: 4,
-            spreadRadius: 2,
+            blurRadius: 7,
+            spreadRadius: 1,
             offset: Offset(0, 3),
           ),
         ],
