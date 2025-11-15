@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:gym/core/helpers/extensions.dart';
 import 'package:gym/core/routing/routes.dart';
 import 'package:gym/core/theme/styles.dart';
-import 'package:gym/features/auth/ui/screens/register_screen.dart';
 
-class LoginFooter extends StatelessWidget {
-  const LoginFooter({super.key});
+class RegisterFooter extends StatelessWidget {
+  const RegisterFooter({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,14 +14,14 @@ class LoginFooter extends StatelessWidget {
         text: TextSpan(
           style: TextStyles.font13Blackw600,
           children: [
-            const TextSpan(text: "Don’t have an account? "),
+            const TextSpan(text: "Already have an account? "),
             TextSpan(
-              text: "Register",
+              text: "LogIn",
               style: TextStyles.font13mainOrange600,
               recognizer:
                   TapGestureRecognizer()
                     ..onTap = () {
-                      context.pushNamed(Routes.registersScreen);
+                      context.pushNamed(Routes.loginScreen);
                     },
             ),
           ],
