@@ -7,4 +7,6 @@ class ColorsManegar {
   static const Color darkblue = Color(0xff0A407D);
   static const Color lightblue = Color(0xff2B7FFD);
   static const Color backgroundcolor = Colors.white;
+  static const Color black = Colors.black;
+  static const Color grey = Colors.grey;
 }
