@@ -40,9 +40,6 @@ class AppTextFormField extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: const Color.fromARGB(255, 0, 0, 0).withOpacity(1),
-            blurRadius: 4,
-            spreadRadius: 2,
-            color: const Color.fromARGB(255, 0, 0, 0).withOpacity(1),
             blurRadius: 7,
             spreadRadius: 1,
             offset: Offset(0, 3),
@@ -99,7 +96,7 @@ class AppTextFormField extends StatelessWidget {
         obscureText: isObscureText ?? false,
         style: TextStyle(
           fontSize: 14,
-          color: colorsManegar.darkgray,
+          color: ColorsManegar.darkgray,
           fontWeight: FontWeight.w500,
         ),
         validator: (value) {
