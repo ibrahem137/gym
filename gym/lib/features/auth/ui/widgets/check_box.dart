@@ -16,8 +16,8 @@ class _CheckBoxState extends State<CheckBox> {
     return Row(
       children: [
         Checkbox(
-          checkColor: colorsManegar.semewhite,
-          activeColor: colorsManegar.mainOrange,
+          checkColor: ColorsManegar.semewhite,
+          activeColor: ColorsManegar.mainOrange,
           value: rememberMe,
           onChanged: (value) {
             setState(() {
@@ -25,10 +25,7 @@ class _CheckBoxState extends State<CheckBox> {
             });
           },
         ),
-        Text(
-          "Remember me",
-          style: TextStyles.font13Blackw600,
-        ),
+        Text("Remember me", style: TextStyles.font13Blackw600),
       ],
     );
   }

@@ -15,16 +15,12 @@ class BigContainerOfLogin extends StatefulWidget {
   const BigContainerOfLogin({super.key});
 
   @override
-  State<BigContainerOfLogin> createState() =>
-      _BigContainerOfLoginState();
+  State<BigContainerOfLogin> createState() => _BigContainerOfLoginState();
 }
 
-class _BigContainerOfLoginState
-    extends State<BigContainerOfLogin> {
-  TextEditingController emailcontroller =
-      TextEditingController();
-  TextEditingController passwordcontroller =
-      TextEditingController();
+class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
+  TextEditingController emailcontroller = TextEditingController();
+  TextEditingController passwordcontroller = TextEditingController();
 
   bool isPasswordObscureText = true;
 
@@ -36,14 +32,11 @@ class _BigContainerOfLoginState
       width: 400.w,
       height: 750.h,
       decoration: BoxDecoration(
-        color: colorsManegar.semewhite,
+        color: ColorsManegar.semewhite,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20.0,
-          vertical: 20,
-        ),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
         child: Column(
           children: [
             Image.asset(
@@ -52,10 +45,7 @@ class _BigContainerOfLoginState
               height: 150.h,
             ),
             SizedBox(height: 20.h),
-            Text(
-              'Login to Gym Management',
-              style: TextStyles.font24BlackBold,
-            ),
+            Text('Login to Gym Management', style: TextStyles.font24BlackBold),
             SizedBox(height: 20.h),
 
             Text(
@@ -65,17 +55,11 @@ class _BigContainerOfLoginState
             SizedBox(height: 20.h),
             Align(
               alignment: Alignment.centerLeft,
-              child: Text(
-                'Email',
-                style: TextStyles.font13Blackw600,
-              ),
+              child: Text('Email', style: TextStyles.font13Blackw600),
             ),
             SizedBox(height: 5),
             AppTextFormField(
-              prefixIcon: Icon(
-                Icons.email,
-                color: ColorsManegar.darkgray,
-              ),
+              prefixIcon: Icon(Icons.email, color: ColorsManegar.darkgray),
               hintText: ' Enter Your Email ',
               validator: (value) {
                 if (value == null ||
@@ -89,18 +73,14 @@ class _BigContainerOfLoginState
             SizedBox(height: 24.h),
             Align(
               alignment: Alignment.centerLeft,
-              child: Text(
-                'Passowrd',
-                style: TextStyles.font13Blackw600,
-              ),
+              child: Text('Passowrd', style: TextStyles.font13Blackw600),
             ),
             SizedBox(height: 5.h),
             AppTextFormField(
               prefixIcon: Icon(Icons.lock),
               controller: passwordcontroller,
               hintText: ' Enter Your Password ',
-              isObscureText:
-                  isPasswordConfirmationObscureText,
+              isObscureText: isPasswordConfirmationObscureText,
               suffixIcon: GestureDetector(
                 onTap: () {
                   setState(() {
@@ -122,8 +102,7 @@ class _BigContainerOfLoginState
             ),
             SizedBox(height: 22.h),
             Row(
-              mainAxisAlignment:
-                  MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
               children: [
                 CheckBox(),
@@ -141,7 +120,7 @@ class _BigContainerOfLoginState
             ),
             SizedBox(height: 20.h),
             AppTextButton(
-              backgroundColor: colorsManegar.mainOrange,
+              backgroundColor: ColorsManegar.mainOrange,
               buttonText: 'LogIn',
               textStyle: TextStyles.font13white800,
               onPressed: () {},

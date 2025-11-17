@@ -22,7 +22,7 @@ class BigContainerOfForgotpass extends StatelessWidget {
       width: 400.w,
       height: 500.h,
       decoration: BoxDecoration(
-        color: colorsManegar.semewhite,
+        color: ColorsManegar.semewhite,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
@@ -54,7 +54,7 @@ class BigContainerOfForgotpass extends StatelessWidget {
             ),
             SizedBox(height: 5),
             AppTextFormField(
-              prefixIcon: Icon(Icons.email, color: colorsManegar.darkgray),
+              prefixIcon: Icon(Icons.email, color: ColorsManegar.darkgray),
               hintText: ' Enter Your Email ',
               validator: (value) {
                 if (value == null ||
@@ -67,7 +67,7 @@ class BigContainerOfForgotpass extends StatelessWidget {
             ),
             SizedBox(height: 30.h),
             AppTextButton(
-              backgroundColor: colorsManegar.mainOrange,
+              backgroundColor: ColorsManegar.mainOrange,
               buttonText: 'Send Reset Instructions',
               textStyle: TextStyles.font13white800,
               onPressed: () {},

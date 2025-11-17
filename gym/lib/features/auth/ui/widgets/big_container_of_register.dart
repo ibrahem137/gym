@@ -32,7 +32,7 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
       width: 400.w,
       // height: 750.h,
       decoration: BoxDecoration(
-        color: colorsManegar.semewhite,
+        color: ColorsManegar.semewhite,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
@@ -61,7 +61,7 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
             AppTextFormField(
               prefixIcon: Icon(
                 Icons.person_outlined,
-                color: colorsManegar.darkgray,
+                color: ColorsManegar.darkgray,
               ),
               hintText: ' Enter Your Full Name ',
               validator: (value) {
@@ -83,7 +83,7 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
             AppTextFormField(
               prefixIcon: Icon(
                 Icons.phone_android_outlined,
-                color: colorsManegar.darkgray,
+                color: ColorsManegar.darkgray,
               ),
               hintText: ' Enter Your Phone Number ',
               validator: (value) {
@@ -103,7 +103,7 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
             ),
             SizedBox(height: 5),
             AppTextFormField(
-              prefixIcon: Icon(Icons.email, color: colorsManegar.darkgray),
+              prefixIcon: Icon(Icons.email, color: ColorsManegar.darkgray),
               hintText: ' Enter Your Email ',
               validator: (value) {
                 if (value == null ||
@@ -181,7 +181,7 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
             SizedBox(height: 32.h),
 
             AppTextButton(
-              backgroundColor: colorsManegar.mainOrange,
+              backgroundColor: ColorsManegar.mainOrange,
               buttonText: 'Register',
               textStyle: TextStyles.font13white800,
               onPressed: () {},
