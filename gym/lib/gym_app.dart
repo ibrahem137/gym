@@ -15,10 +15,12 @@ class GymApp extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         onGenerateRoute: AppRouter().generateRoute,
-        initialRoute: Routes.loginScreen,
+        initialRoute: Routes.homeScreen,
         debugShowCheckedModeBanner: false,
         title: 'Gym App',
-        theme: ThemeData(primaryColor: ColorsManegar.mainOrange),
+        theme: ThemeData(
+          primaryColor: ColorsManegar.mainOrange,
+        ),
       ),
     );
   }

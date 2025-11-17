@@ -41,5 +41,17 @@ class TextStyles {
     color: const Color.fromARGB(255, 255, 255, 255),
   );
 
-  static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);
+  static TextStyle font32BlueBold = TextStyle(
+    fontSize: 32.sp,
+  );
+  static TextStyle font40Orange = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorsManegar.mainOrange,
+  );
+  static TextStyle font10Grey = TextStyle(
+    fontSize: 10.sp,
+
+    color: ColorsManegar.grey,
+  );
 }
