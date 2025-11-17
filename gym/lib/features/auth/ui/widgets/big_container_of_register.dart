@@ -2,6 +2,8 @@ import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/helpers/app_regex.dart' show AppRegex;
+import 'package:gym/core/helpers/extensions.dart';
+import 'package:gym/core/routing/routes.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart' show TextStyles;
 import 'package:gym/core/widgets/app_text_button.dart';
@@ -158,16 +160,15 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
               prefixIcon: Icon(Icons.lock),
               controller: confirmpasswordcontroller,
               hintText: ' Confirm Your Password ',
-              isObscureText: isPasswordConfirmationObscureText,
+              isObscureText: isPasswordObscureText,
               suffixIcon: GestureDetector(
                 onTap: () {
                   setState(() {
-                    isPasswordConfirmationObscureText =
-                        !isPasswordConfirmationObscureText;
+                    isPasswordObscureText = !isPasswordObscureText;
                   });
                 },
                 child: Icon(
-                  isPasswordConfirmationObscureText
+                  isPasswordObscureText
                       ? Icons.visibility_off
                       : Icons.visibility,
                 ),
@@ -184,7 +185,9 @@ class _BigContainerOfRegisterState extends State<BigContainerOfRegister> {
               backgroundColor: ColorsManegar.mainOrange,
               buttonText: 'Register',
               textStyle: TextStyles.font13white800,
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(Routes.homeScreen);
+              },
             ),
             SizedBox(height: 18.h),
             RegisterFooter(),

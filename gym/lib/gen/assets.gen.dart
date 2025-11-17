@@ -34,6 +34,10 @@ class $AssetsImagesGen {
   AssetGenImage get gymproLogo =>
       const AssetGenImage('assets/images/gympro-logo.jpg');
 
+  /// File path: assets/images/member-profile.jpg
+  AssetGenImage get memberProfile =>
+      const AssetGenImage('assets/images/member-profile.jpg');
+
   /// List of all assets
   List<AssetGenImage> get values => [
     gymAuthBackground,
@@ -41,6 +45,7 @@ class $AssetsImagesGen {
     gymLogoPng,
     gymOrangeBackground,
     gymproLogo,
+    memberProfile,
   ];
 }
 

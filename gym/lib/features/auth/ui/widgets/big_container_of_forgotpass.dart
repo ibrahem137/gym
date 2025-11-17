@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/helpers/app_regex.dart';
 import 'package:gym/core/helpers/extensions.dart';
@@ -20,7 +19,7 @@ class BigContainerOfForgotpass extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 400.w,
-      height: 500.h,
+      height: 515.h,
       decoration: BoxDecoration(
         color: ColorsManegar.semewhite,
         borderRadius: BorderRadius.circular(20),
@@ -72,16 +71,16 @@ class BigContainerOfForgotpass extends StatelessWidget {
               textStyle: TextStyles.font13white800,
               onPressed: () {},
             ),
-            SizedBox(height: 10.h),
+            SizedBox(height: 17.h),
 
-            GestureDetector(
-              onTap: () {
+            TextButton(
+              onPressed: () {
                 context.pop();
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.arrow_back),
+                  Icon(Icons.arrow_back, color: ColorsManegar.mainOrange),
                   SizedBox(width: 5.w),
 
                   Text('Back to Login ', style: TextStyles.font13darkgrayw400),
