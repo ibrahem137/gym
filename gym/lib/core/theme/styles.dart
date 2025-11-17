@@ -40,6 +40,11 @@ class TextStyles {
     fontWeight: FontWeight.w800,
     color: const Color.fromARGB(255, 255, 255, 255),
   );
+  static TextStyle font16white800 = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w800,
+    color: const Color.fromARGB(255, 255, 255, 255),
+  );
 
   static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);
 }

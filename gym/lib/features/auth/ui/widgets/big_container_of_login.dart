@@ -123,7 +123,9 @@ class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
               backgroundColor: ColorsManegar.mainOrange,
               buttonText: 'LogIn',
               textStyle: TextStyles.font13white800,
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(Routes.homeScreen);
+              },
             ),
             SizedBox(height: 18),
             LoginFooter(),
