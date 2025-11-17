@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show Icons, TextButton;
+import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/helpers/app_regex.dart' show AppRegex;

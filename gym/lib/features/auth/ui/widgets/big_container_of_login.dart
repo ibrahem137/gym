@@ -8,7 +8,7 @@ import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_text_button.dart';
 import 'package:gym/core/widgets/app_text_form_field.dart';
 import 'package:gym/features/auth/ui/widgets/check_box.dart';
-import 'package:gym/features/auth/ui/widgets/text_span.dart';
+import 'package:gym/features/auth/ui/widgets/login_footer.dart';
 import 'package:gym/gen/assets.gen.dart';
 
 class BigContainerOfLogin extends StatefulWidget {
@@ -36,7 +36,7 @@ class _BigContainerOfLoginState
       width: 400.w,
       height: 750.h,
       decoration: BoxDecoration(
-        color: ColorsManegar.semewhite,
+        color: colorsManegar.semewhite,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
