@@ -25,7 +25,10 @@ class _CheckBoxState extends State<CheckBox> {
             });
           },
         ),
-        Text("Remember me", style: TextStyles.font13Blackw600),
+        Text(
+          "Remember me",
+          style: TextStyles.font13Blackw600,
+        ),
       ],
     );
   }

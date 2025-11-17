@@ -39,7 +39,12 @@ class AppTextFormField extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
           BoxShadow(
-            color: const Color.fromARGB(255, 0, 0, 0).withOpacity(1),
+            color: const Color.fromARGB(
+              255,
+              0,
+              0,
+              0,
+            ).withOpacity(1),
             blurRadius: 4,
             spreadRadius: 2,
             offset: Offset(0, 3),
@@ -52,7 +57,10 @@ class AppTextFormField extends StatelessWidget {
           isDense: true,
           contentPadding:
               contentPadding ??
-              EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
+              EdgeInsets.symmetric(
+                horizontal: 20.w,
+                vertical: 18.h,
+              ),
           focusedBorder:
               focusedBorder ??
               OutlineInputBorder(
@@ -72,11 +80,17 @@ class AppTextFormField extends StatelessWidget {
                 borderRadius: BorderRadius.circular(100.0),
               ),
           errorBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: Colors.red, width: 1.3),
+            borderSide: const BorderSide(
+              color: Colors.red,
+              width: 1.3,
+            ),
             borderRadius: BorderRadius.circular(16.0),
           ),
           focusedErrorBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: Colors.red, width: 1.3),
+            borderSide: const BorderSide(
+              color: Colors.red,
+              width: 1.3,
+            ),
             borderRadius: BorderRadius.circular(16.0),
           ),
           hintStyle:
@@ -90,7 +104,8 @@ class AppTextFormField extends StatelessWidget {
           suffixIcon: suffixIcon,
           prefixIcon: prefixIcon,
           fillColor:
-              backgroundColor ?? const Color.fromARGB(255, 255, 255, 255),
+              backgroundColor ??
+              const Color.fromARGB(255, 255, 255, 255),
           filled: true,
         ),
         obscureText: isObscureText ?? false,
