@@ -16,11 +16,10 @@ class GymApp extends StatelessWidget {
       child: MaterialApp(
         onGenerateRoute: AppRouter().generateRoute,
         initialRoute: Routes.loginScreen,
+        initialRoute: Routes.registersScreen,
         debugShowCheckedModeBanner: false,
         title: 'Gym App',
-        theme: ThemeData(
-          primaryColor: ColorsManegar.mainOrange,
-        ),
+        theme: ThemeData(primaryColor: colorsManegar.mainOrange),
       ),
     );
   }

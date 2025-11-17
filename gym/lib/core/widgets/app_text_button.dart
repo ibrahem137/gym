@@ -39,6 +39,13 @@ class AppTextButton extends StatelessWidget {
             ),
         backgroundColor: WidgetStatePropertyAll(
           backgroundColor ?? ColorsManegar.lightblue,
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius ?? 16.0),
+          ),
+        ),
+        backgroundColor: WidgetStatePropertyAll(
+          backgroundColor ?? colorsManegar.lightblue,
         ),
         padding: WidgetStateProperty.all<EdgeInsets>(
           EdgeInsets.symmetric(
@@ -51,6 +58,7 @@ class AppTextButton extends StatelessWidget {
             buttonWidth?.w ?? double.maxFinite,
             buttonHeight ?? 50.h,
           ),
+          Size(buttonWidth?.w ?? double.maxFinite, buttonHeight ?? 50.h),
         ),
       ),
       onPressed: onPressed,

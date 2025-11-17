@@ -9,7 +9,7 @@ class BackgroundImage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(Assets.images.gymAuthBackground.path),
+          image: AssetImage(Assets.images.gymOrangeBackground.path),
           fit: BoxFit.cover,
         ),
       ),
