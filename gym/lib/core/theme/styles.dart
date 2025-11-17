@@ -22,7 +22,7 @@ class TextStyles {
   static TextStyle font13darkgrayw400 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w400,
-    color: colorsManegar.darkgray,
+    color: ColorsManegar.darkgray,
   );
 
   static TextStyle font13Blackw600 = TextStyle(
@@ -33,7 +33,7 @@ class TextStyles {
   static TextStyle font13mainOrange600 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w600,
-    color: colorsManegar.mainOrange,
+    color: ColorsManegar.mainOrange,
   );
   static TextStyle font13white800 = TextStyle(
     fontSize: 13.sp,
@@ -41,7 +41,5 @@ class TextStyles {
     color: const Color.fromARGB(255, 255, 255, 255),
   );
 
-  static TextStyle font32BlueBold = TextStyle(
-    fontSize: 32.sp,
-  );
+  static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);
 }

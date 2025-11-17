@@ -29,16 +29,6 @@ class AppTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: ButtonStyle(
-        shape:
-            WidgetStateProperty.all<RoundedRectangleBorder>(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(
-                  borderRadius ?? 16.0,
-                ),
-              ),
-            ),
-        backgroundColor: WidgetStatePropertyAll(
-          backgroundColor ?? ColorsManegar.lightblue,
         shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius ?? 16.0),
@@ -54,10 +44,6 @@ class AppTextButton extends StatelessWidget {
           ),
         ),
         fixedSize: WidgetStateProperty.all(
-          Size(
-            buttonWidth?.w ?? double.maxFinite,
-            buttonHeight ?? 50.h,
-          ),
           Size(buttonWidth?.w ?? double.maxFinite, buttonHeight ?? 50.h),
         ),
       ),
