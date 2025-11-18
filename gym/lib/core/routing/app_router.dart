@@ -4,7 +4,7 @@ import 'package:gym/features/auth/ui/screens/forgot_password.dart';
 import 'package:gym/features/auth/ui/screens/login_screen.dart';
 import 'package:gym/features/auth/ui/screens/register_screen.dart';
 import 'package:gym/features/home/ui/home_screen.dart';
-import 'package:gym/features/members/ui/widgets/members_card.dart';
+import 'package:gym/features/members/ui/screens/members_card.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -20,7 +20,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ForgotPassword());
 
       case Routes.membersscreen:
-        return MaterialPageRoute(builder: (_) => const MembersCard());
+        return MaterialPageRoute(builder: (_) => MembersCard());
 
       default:
         return MaterialPageRoute(
