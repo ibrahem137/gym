@@ -20,7 +20,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ForgotPassword());
 
       case Routes.membersscreen:
-        return MaterialPageRoute(builder: (_) => const MembersCard());
+        return MaterialPageRoute(builder: (_) => MembersCard());
 
       default:
         return MaterialPageRoute(

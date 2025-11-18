@@ -1,31 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:gym/core/theme/styles.dart';
-import 'package:gym/features/members/ui/widgets/one_member_card.dart';
+import 'package:gym/features/members/data/member_model_listdata.dart';
+import 'package:gym/features/members/ui/widgets/members_headar_screen.dart';
+import 'package:gym/features/members/ui/widgets/one_mmeber_row.dart';
 
 class MembersCard extends StatelessWidget {
-  const MembersCard({super.key});
-
+  MembersCard({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ListView.builder(
-        itemBuilder: (context, index) {
-          [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Text('Member', style: TextStyles.font13Blackw600),
-                Text('Contact', style: TextStyles.font13Blackw600),
-                Text('Status', style: TextStyles.font13Blackw600),
-                Text('Join Date', style: TextStyles.font13Blackw600),
-                Text('Expiry Date', style: TextStyles.font13Blackw600),
-                Text('Actions', style: TextStyles.font13Blackw600),
-              ],
-            ),
-            OneMemberCard(),
-          ];
-        },
-      ),
+    return Column(
+      children: [
+        MembersHeadarScreen(),
+
+        const Divider(),
+
+        Expanded(
+          child: ListView.builder(
+            itemCount: membersModelList.length,
+            itemBuilder: (context, index) {
+              return OneMemberRow(member: membersModelList[index]);
+            },
+          ),
+        ),
+      ],
     );
   }
 }

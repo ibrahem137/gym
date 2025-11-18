@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Membersscreen extends StatelessWidget {
-  const Membersscreen({super.key});
+class MembersScreen extends StatelessWidget {
+  const MembersScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text('Members Screen'));
+    return Scaffold();
   }
 }

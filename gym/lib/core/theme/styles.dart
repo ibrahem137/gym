@@ -13,6 +13,11 @@ class TextStyles {
     fontWeight: FontWeight.w300,
     color: Colors.black,
   );
+  static TextStyle font17Blackw600 = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
 
   static TextStyle font16Blackw600 = TextStyle(
     fontSize: 12.sp,
@@ -46,9 +51,7 @@ class TextStyles {
     color: const Color.fromARGB(255, 255, 255, 255),
   );
 
-  static TextStyle font32BlueBold = TextStyle(
-    fontSize: 32.sp,
-  );
+  static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);
   static TextStyle font40Orange = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,
