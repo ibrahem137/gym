@@ -24,6 +24,7 @@ class MembersCard extends StatelessWidget {
             ),
             OneMemberCard(),
           ];
+          return null;
         },
       ),
     );
