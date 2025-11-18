@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/status_color.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/features/members/data/member_model_class.dart';
@@ -23,7 +24,7 @@ class OneMemberRow extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(member.name, style: TextStyles.font16Blackw600),
+                    Text(member.name, style: TextStyles.font17Blackw600),
                     Text("ID: ${member.id}", style: TextStyles.font13Blackw600),
                   ],
                 ),
@@ -44,22 +45,21 @@ class OneMemberRow extends StatelessWidget {
           ),
 
           // ---------------- STATUS ----------------
-          Expanded(
-            flex: 2,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              decoration: BoxDecoration(
-                color: getStatusColor(member),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Text(
-                member.status,
-                textAlign: TextAlign.center,
-                style: TextStyles.font16white800,
-              ),
+          Container(
+            width: 70.w,
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: getStatusColor(member),
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Text(
+              member.status,
+              textAlign: TextAlign.center,
+              style: TextStyles.font13white800,
             ),
           ),
-
+          //Expanded(flex: 2, child: SizedBox(width: 0.w)),
+          SizedBox(width: 180.w),
           // ---------------- JOIN DATE ----------------
           Expanded(
             flex: 2,

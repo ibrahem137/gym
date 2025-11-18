@@ -28,4 +28,22 @@ final List<MemberModelClass> membersModelList = [
     joinDate: "2023-06-10",
     expiryDate: "2024-06-10",
   ),
+  MemberModelClass(
+    name: "David Brown",
+    id: "4",
+    email: "david@example.com",
+    phone: "+1234567892",
+    status: "Expired",
+    joinDate: "2023-06-10",
+    expiryDate: "2024-06-10",
+  ),
+  MemberModelClass(
+    name: "Emily Davis",
+    id: "5",
+    email: "emily@example.com",
+    phone: "+1234567892",
+    status: "Expired",
+    joinDate: "2023-06-10",
+    expiryDate: "2025-06-10",
+  ),
 ];
