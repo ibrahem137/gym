@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/features/members/data/member_model_class.dart';
 
-late final MemberModelClass member;
-
-Color getStatusColor() {
+Color getStatusColor(MemberModelClass member) {
   switch (member.status.toLowerCase()) {
     case "active":
       return ColorsManegar.mainOrange;
