@@ -38,6 +38,7 @@ class MembersSearchFiled extends StatelessWidget {
                 //----------  Filter & OK Button ----------
                 MembersTextfiledButton(
                   hintText: 'Search',
+
                   icon: Icons.person_search_outlined,
                   onPressed: () {},
                 ),
