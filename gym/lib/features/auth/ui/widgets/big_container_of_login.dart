@@ -45,7 +45,7 @@ class _BigContainerOfLoginState extends State<BigContainerOfLogin> {
               height: 150.h,
             ),
             SizedBox(height: 20.h),
-            Text('Login to Gym Management', style: TextStyles.font24BlackBold),
+            Text('Login to Gym Management', style: TextStyles.font24Blackw400),
             SizedBox(height: 20.h),
 
             Text(

@@ -9,4 +9,6 @@ class ColorsManegar {
   static const Color backgroundcolor = Colors.white;
   static const Color black = Colors.black;
   static const Color grey = Colors.grey;
+  static const Color shadowColor = Color.fromARGB(0, 255, 0, 0);
+  static const Color searchfieldtext = Color.fromARGB(255, 23, 23, 23);
 }

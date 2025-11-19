@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gym/core/theme/styles.dart';
 
-class MembersHeadarScreen extends StatelessWidget {
-  const MembersHeadarScreen({super.key});
+class MembersHeadCard extends StatelessWidget {
+  const MembersHeadCard({super.key});
 
   @override
   Widget build(BuildContext context) {
