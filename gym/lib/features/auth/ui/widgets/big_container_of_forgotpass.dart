@@ -34,7 +34,7 @@ class BigContainerOfForgotpass extends StatelessWidget {
               height: 100.h,
             ),
             //   SizedBox(height: 20.h),
-            Text('Reset Passowrd', style: TextStyles.font24BlackBold),
+            Text('Reset Passowrd', style: TextStyles.font24Blackw400),
 
             //   SizedBox(height: 20.h),
             Row(

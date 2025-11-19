@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/colors.dart';
 
 class TextStyles {
-  static TextStyle font24BlackBold = TextStyle(
+  static TextStyle font24Blackw400 = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w400,
     color: Colors.black,
@@ -24,10 +24,24 @@ class TextStyles {
     fontWeight: FontWeight.w300,
     color: Colors.black,
   );
+  static TextStyle font16Blackw500 = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: Colors.black,
+  );
+  static TextStyle font28Blackboldstart = TextStyle(
+    fontSize: 28.sp,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
   static TextStyle font13darkgrayw400 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w400,
     color: ColorsManegar.darkgray,
+  );
+  static TextStyle font14darkgraynormal = TextStyle(
+    fontSize: 14.sp,
+    color: ColorsManegar.searchfieldtext,
   );
 
   static TextStyle font13Blackw600 = TextStyle(
@@ -62,4 +76,6 @@ class TextStyles {
 
     color: ColorsManegar.grey,
   );
+
+  static var font24BlackBoldw400;
 }
