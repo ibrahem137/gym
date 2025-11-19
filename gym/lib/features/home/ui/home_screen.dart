@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gym/core/theme/colors.dart';
+import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_sidebar.dart';
 import 'package:gym/features/checkin/ui/checkin_screen.dart';
 import 'package:gym/features/dashboard/ui/dashboard_screem.dart';
@@ -33,6 +34,63 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorsManegar.backgroundcolor,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: ColorsManegar.backgroundcolor,
+        elevation: 0,
+        actions: [
+          Icon(
+            Icons.notifications_none_outlined,
+            color: ColorsManegar.grey,
+          ),
+          SizedBox(width: 10),
+          Icon(
+            Icons.person_outline,
+            color: ColorsManegar.grey,
+          ),
+          SizedBox(width: 10),
+        ],
+        title: Row(
+          children: [
+            Text(
+              'GymPro',
+              style: TextStyles.font13mainOrange600,
+            ),
+            SizedBox(width: 20),
+            Expanded(
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.50),
+                      blurRadius: 6,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(
+                      Icons.search,
+                      size: 20,
+                    ),
+                    labelText: 'Search',
+                    floatingLabelStyle:
+                        TextStyles.font10Grey,
+                    border: InputBorder.none,
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Row(
         children: [
           AppSidebar(controller: _controller),

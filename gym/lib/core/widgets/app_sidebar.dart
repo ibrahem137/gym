@@ -10,6 +10,7 @@ class AppSidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SidebarX(
+      // animationDuration: Duration(milliseconds: 300), leave it for future use
       showToggleButton: false,
       controller: controller,
       theme: SidebarXTheme(
