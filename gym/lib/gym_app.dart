@@ -18,7 +18,9 @@ class GymApp extends StatelessWidget {
         initialRoute: Routes.homeScreen,
         debugShowCheckedModeBanner: false,
         title: 'Gym App',
-        theme: ThemeData(primaryColor: ColorsManegar.mainOrange),
+        theme: ThemeData(
+          primaryColor: ColorsManegar.mainOrange,
+        ),
       ),
     );
   }
