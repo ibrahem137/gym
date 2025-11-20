@@ -22,6 +22,9 @@ class AppRouter {
       case Routes.membersscreen:
         return MaterialPageRoute(builder: (_) => MembersScreen());
 
+      case Routes.trainersScreen:
+        return MaterialPageRoute(builder: (_) => HomeScreen());
+
       default:
         return MaterialPageRoute(
           builder:
