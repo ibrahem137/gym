@@ -49,6 +49,11 @@ class TextStyles {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
+  static TextStyle font13lightgraykw600 = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w600,
+    color: ColorsManegar.lightGray,
+  );
   static TextStyle font13mainOrange600 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w600,
@@ -57,12 +62,22 @@ class TextStyles {
   static TextStyle font13white800 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w800,
-    color: const Color.fromARGB(255, 255, 255, 255),
+    color: ColorsManegar.backgroundcolor,
+  );
+  static TextStyle font18whitebold = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorsManegar.backgroundcolor,
   );
   static TextStyle font16white800 = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w800,
-    color: const Color.fromARGB(255, 255, 255, 255),
+    color: ColorsManegar.backgroundcolor,
+  );
+  static TextStyle font14white600 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    color: ColorsManegar.backgroundcolor,
   );
 
   static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);

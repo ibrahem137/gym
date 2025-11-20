@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gym/core/theme/styles.dart';
 
 class TrainerInfoTile extends StatelessWidget {
   final String title;
@@ -10,8 +11,8 @@ class TrainerInfoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100.w,
-      height: 100.h,
+      width: 150.w,
+      height: 95.h,
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: Colors.grey.shade100,
@@ -22,13 +23,11 @@ class TrainerInfoTile extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(fontSize: 12, color: Colors.black54),
+            textAlign: TextAlign.start,
+            style: TextStyles.font13darkgrayw400,
           ),
-          const SizedBox(height: 4),
-          Text(
-            value,
-            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-          ),
+          //  const SizedBox(height: 4),
+          Text(value, style: TextStyles.font13Blackw600),
         ],
       ),
     );

@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/colors.dart';
+import 'package:gym/core/theme/styles.dart';
 
 class MembersAddMembersButton extends StatelessWidget {
-  const MembersAddMembersButton({super.key});
+  final String? text;
+  final VoidCallback? onPressed;
+  const MembersAddMembersButton({
+    super.key,
+    required this.text,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,18 +23,16 @@ class MembersAddMembersButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Row(
           children: [
             Icon(Icons.add, color: ColorsManegar.backgroundcolor),
             SizedBox(width: 8.w),
-            Text(
-              "Add Member",
-              style: TextStyle(color: ColorsManegar.backgroundcolor),
-            ),
+            Text(text!, style: TextStyles.font13white800),
           ],
         ),
       ),
     );
   }
 }
+//

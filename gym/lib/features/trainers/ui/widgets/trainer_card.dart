@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/app_shadow.dart';
+import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
+import 'package:gym/core/widgets/app_text_button.dart';
 import 'package:gym/features/trainers/data/trainers_model.dart';
+import 'package:gym/features/trainers/ui/widgets/image_trainer.dart';
 import 'package:gym/features/trainers/ui/widgets/trainer_info.dart';
 
 class TrainerCard extends StatelessWidget {
@@ -26,29 +29,13 @@ class TrainerCard extends StatelessWidget {
           // header
           Row(
             children: [
-              CircleAvatar(
-                radius: 28,
-                backgroundColor: Colors.red.shade100,
-                child: Text(
-                  trainer.initials,
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 16),
+              ImageTrainer(trainer: trainer),
+
+              SizedBox(width: 16.w),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    trainer.name,
-                    style: const TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  Text(trainer.name, style: TextStyles.font17Blackw600),
                   Text(
                     trainer.specialty,
                     style: const TextStyle(fontSize: 13, color: Colors.black54),
@@ -58,7 +45,7 @@ class TrainerCard extends StatelessWidget {
             ],
           ),
 
-          const SizedBox(height: 20),
+          SizedBox(height: 20.h),
 
           // info tiles
           Row(
@@ -72,63 +59,50 @@ class TrainerCard extends StatelessWidget {
             ],
           ),
 
-          const SizedBox(height: 16),
-
-          // rating
-          const SizedBox(height: 16),
+          SizedBox(height: 22.h),
 
           // email + phone
           Row(
             children: [
               const Icon(Icons.email_outlined, size: 18),
-              const SizedBox(width: 8),
+              SizedBox(width: 8.w),
               Text(trainer.email),
             ],
           ),
-          const SizedBox(height: 6),
+          SizedBox(height: 6.h),
           Row(
             children: [
               const Icon(Icons.phone, size: 18),
-              const SizedBox(width: 8),
+              SizedBox(width: 8.w),
               Text(trainer.phone),
             ],
           ),
 
-          const SizedBox(height: 18),
+          SizedBox(height: 18.h),
 
           // buttons
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 28,
-                    vertical: 12,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
+              AppTextButton(
+                buttonText: "View Profile",
+                textStyle: TextStyles.font13Blackw600,
                 onPressed: () {},
-                child: const Text(
-                  "View Profile",
-                  style: TextStyle(color: Colors.black),
-                ),
+                borderRadius: 20,
+                buttonWidth: 130.w,
+                buttonHeight: 25.h,
+                horizontalPadding: 28,
+                verticalPadding: 12,
+                backgroundColor: ColorsManegar.semewhite,
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 32,
-                    vertical: 12,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
+
+              AppTextButton(
+                buttonText: "Schedule",
+                textStyle: TextStyles.font14white600,
                 onPressed: () {},
-                child: Text("Schedule", style: TextStyles.font13white800),
+                buttonWidth: 110.w,
+                buttonHeight: 25.h,
+                borderRadius: 20,
               ),
             ],
           ),
