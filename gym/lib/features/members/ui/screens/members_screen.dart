@@ -5,7 +5,7 @@ import 'package:gym/core/theme/styles.dart';
 import 'package:gym/features/members/ui/widgets/members_card.dart';
 import 'package:gym/features/members/ui/widgets/members_head_card.dart';
 import 'package:gym/features/members/ui/widgets/members_search_filed.dart';
-import 'package:gym/features/members/ui/widgets/members_add_members_button.dart';
+import 'package:gym/core/widgets/app_add_button.dart';
 
 class MembersScreen extends StatelessWidget {
   MembersScreen({super.key});
@@ -20,13 +20,14 @@ class MembersScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
               children: [
                 Text(
                   "Members",
                   style: TextStyles.font28Blackboldstart,
                   textAlign: TextAlign.start,
                 ),
-                MembersAddMembersButton(),
+                MembersAddMembersButton(text: "Add Member", onPressed: () {}),
               ],
             ),
           ),
