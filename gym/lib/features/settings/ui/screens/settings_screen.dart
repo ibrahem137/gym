@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gym/core/theme/colors.dart';
+import 'package:gym/features/settings/ui/widgets/settings_card.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -8,8 +9,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorsManegar.backgroundcolor,
-
-      body: Center(child: Text('settings screen')),
+      body: Column(children: [SettingsCard()]),
     );
   }
 }
