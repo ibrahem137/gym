@@ -18,7 +18,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final _controller = SidebarXController(selectedIndex: 3, extended: true);
+  final _controller = SidebarXController(selectedIndex: 5, extended: true);
   final List<Widget> screens = [
     DashboardScreem(),
     MembersScreen(),

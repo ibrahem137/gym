@@ -12,4 +12,5 @@ class ColorsManegar {
   static const Color shadowColor = Color.fromARGB(0, 255, 0, 0);
   static const Color searchfieldtext = Color.fromARGB(255, 23, 23, 23);
   static const Color lightGray = Colors.black54;
+  static const Color lightorange = Color(0xffFFEAEA);
 }

@@ -9,7 +9,17 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorsManegar.backgroundcolor,
-      body: Column(children: [SettingsCard()]),
+      body: Column(
+        children: [
+          SettingsCard(
+            backgroundColorAvatar: ColorsManegar.lightorange,
+            iconAvatar: Icon(
+              Icons.person_2_outlined,
+              color: ColorsManegar.mainOrange,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
