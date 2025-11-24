@@ -85,7 +85,9 @@ class TextStyles {
     color: ColorsManegar.backgroundcolor,
   );
 
-  static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);
+  static TextStyle font32BlueBold = TextStyle(
+    fontSize: 32.sp,
+  );
   static TextStyle font40Orange = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,
@@ -98,4 +100,9 @@ class TextStyles {
   );
 
   static var font24BlackBoldw400;
+  static TextStyle font14grey600 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    color: ColorsManegar.grey,
+  );
 }

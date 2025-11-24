@@ -18,7 +18,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final _controller = SidebarXController(selectedIndex: 5, extended: true);
+  final _controller = SidebarXController(
+    selectedIndex: 0,
+    extended: true,
+  );
   final List<Widget> screens = [
     DashboardScreem(),
     MembersScreen(),
@@ -36,14 +39,23 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: ColorsManegar.backgroundcolor,
         elevation: 0,
         actions: [
-          Icon(Icons.notifications_none_outlined, color: ColorsManegar.grey),
+          Icon(
+            Icons.notifications_none_outlined,
+            color: ColorsManegar.grey,
+          ),
           SizedBox(width: 10),
-          Icon(Icons.person_outline, color: ColorsManegar.grey),
+          Icon(
+            Icons.person_outline,
+            color: ColorsManegar.grey,
+          ),
           SizedBox(width: 10),
         ],
         title: Row(
           children: [
-            Text('GymPro', style: TextStyles.font13mainOrange600),
+            Text(
+              'GymPro',
+              style: TextStyles.font13mainOrange600,
+            ),
             SizedBox(width: 20),
             Expanded(
               child: Container(
@@ -61,11 +73,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search, size: 20),
+                    prefixIcon: Icon(
+                      Icons.search,
+                      size: 20,
+                    ),
                     labelText: 'Search',
-                    floatingLabelStyle: TextStyles.font10Grey,
+                    floatingLabelStyle:
+                        TextStyles.font10Grey,
                     border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(horizontal: 10),
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
                   ),
                 ),
               ),
