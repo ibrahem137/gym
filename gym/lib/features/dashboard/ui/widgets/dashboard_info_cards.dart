@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gym/core/theme/app_shadow.dart';
-import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 
-class DashboardInfoCards extends StatelessWidget {
+class DashboardInfoCards extends StatefulWidget {
   final String title;
   final String value;
   final IconData icon;
@@ -21,21 +19,44 @@ class DashboardInfoCards extends StatelessWidget {
   });
 
   @override
+  State<DashboardInfoCards> createState() =>
+      _DashboardInfoCardsState();
+}
+
+class _DashboardInfoCardsState
+    extends State<DashboardInfoCards> {
+  bool _isHovered = false;
+
+  @override
   Widget build(BuildContext context) {
-    return Card(
-      surfaceTintColor: ColorsManegar.black,
-      color: ColorsManegar.backgroundcolor,
-      shadowColor: ColorsManegar.black,
-      elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Container(
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: AnimatedContainer(
+        duration: Duration(milliseconds: 200),
+        curve: Curves.easeOut,
         width: 300.sp,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15),
-          boxShadow: [AppShadows.bigOuterList[0]],
+          boxShadow:
+              _isHovered
+                  ? [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 20,
+                      spreadRadius: 2,
+                      offset: Offset(0, 8),
+                    ),
+                  ]
+                  : [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 8,
+                      spreadRadius: 1,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
         ),
         padding: EdgeInsets.all(30),
         child: Column(
@@ -43,8 +64,8 @@ class DashboardInfoCards extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              title,
-              style: TextStyles.font13darkgrayw400,
+              widget.title,
+              style: TextStyles.font10Blackbold,
             ),
             SizedBox(height: 8),
             Row(
@@ -52,17 +73,17 @@ class DashboardInfoCards extends StatelessWidget {
                   MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  value,
+                  widget.value,
                   style: TextStyles.font24Blackw400
                       .copyWith(
                         fontWeight: FontWeight.bold,
                       ),
                 ),
                 CircleAvatar(
-                  backgroundColor: avatarColor,
+                  backgroundColor: widget.avatarColor,
                   child: Icon(
-                    icon,
-                    color: iconColor,
+                    widget.icon,
+                    color: widget.iconColor,
                     size: 28,
                   ),
                 ),

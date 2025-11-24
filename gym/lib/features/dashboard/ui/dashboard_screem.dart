@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/features/dashboard/ui/widgets/dashboard_info_cards.dart';
+import 'package:gym/features/dashboard/ui/widgets/dashboard_revenue_chart.dart';
+import 'package:gym/features/dashboard/ui/widgets/new_subscriptions.dart';
 
 class DashboardScreem extends StatelessWidget {
   const DashboardScreem({super.key});
@@ -45,6 +47,15 @@ class DashboardScreem extends StatelessWidget {
                 iconColor: ColorsManegar.semewhite,
                 avatarColor: ColorsManegar.purpleAccent,
               ),
+            ],
+          ),
+          SizedBox(height: 50),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: DashboardRevenueChart()),
+              SizedBox(width: 20),
+              Expanded(child: NewSubscriptions()),
             ],
           ),
         ],
