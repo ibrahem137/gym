@@ -5,15 +5,27 @@ import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 
 class SettingsTextformFielf extends StatelessWidget {
-  const SettingsTextformFielf({super.key});
+  final String? hintText;
+  final String? headerText;
+  const SettingsTextformFielf({
+    super.key,
+    required this.hintText,
+    required this.headerText,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      // mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: const EdgeInsets.only(bottom: 8.0),
-          child: Text('Email ', style: TextStyles.font14darkgraynormal),
+          child: Text(
+            headerText!,
+            textAlign: TextAlign.start,
+            style: TextStyles.font13darkgraybold,
+          ),
         ),
         Container(
           decoration: BoxDecoration(
@@ -22,11 +34,11 @@ class SettingsTextformFielf extends StatelessWidget {
             color: Colors.white,
           ),
 
-          width: 400.w,
+          width: 540.w,
           height: 50.h,
           child: TextFormField(
             decoration: InputDecoration(
-              hintText: 'First Name',
+              hintText: hintText!,
 
               hintStyle: TextStyles.font13darkgrayw400,
               border: OutlineInputBorder(

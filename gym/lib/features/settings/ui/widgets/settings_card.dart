@@ -5,6 +5,7 @@ import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/features/settings/ui/widgets/settings_textform_fielf.dart';
 
+// ignore: must_be_immutable
 class SettingsCard extends StatelessWidget {
   Color backgroundColorAvatar;
   Icon iconAvatar;
@@ -21,7 +22,7 @@ class SettingsCard extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.all(8.0),
         width: double.infinity,
-        height: 600.h,
+        height: 400.h,
         decoration: BoxDecoration(
           boxShadow: AppShadows.bigOuterList,
           borderRadius: BorderRadius.circular(30),
@@ -60,10 +61,36 @@ class SettingsCard extends StatelessWidget {
                   ),
                 ],
               ),
+              //-----------------------------------------textformfields------------------------------------
+              SizedBox(height: 30.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SettingsTextformFielf(
+                    headerText: "First Name",
+                    hintText: "Joun",
+                  ),
+                  SettingsTextformFielf(
+                    headerText: "Last Name ",
+                    hintText: "Deo",
+                  ),
+                ],
+              ),
+              SizedBox(height: 15.h),
 
-              SizedBox(height: 100.h),
-              SettingsTextformFielf(),
-              SettingsTextformFielf(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SettingsTextformFielf(
+                    headerText: "Email",
+                    hintText: "joun@example.com",
+                  ),
+                  SettingsTextformFielf(
+                    headerText: "Phone Number",
+                    hintText: "+1234567",
+                  ),
+                ],
+              ),
             ],
           ),
         ),
