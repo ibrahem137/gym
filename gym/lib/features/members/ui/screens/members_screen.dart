@@ -8,7 +8,7 @@ import 'package:gym/features/members/ui/widgets/members_search_filed.dart';
 import 'package:gym/core/widgets/app_add_button.dart';
 
 class MembersScreen extends StatelessWidget {
-  MembersScreen({super.key});
+  const MembersScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -29,6 +29,11 @@ class TextStyles {
     fontWeight: FontWeight.w500,
     color: Colors.black,
   );
+  static TextStyle font16Blackw600real = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
   static TextStyle font28Blackboldstart = TextStyle(
     fontSize: 28.sp,
     fontWeight: FontWeight.bold,

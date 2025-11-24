@@ -22,6 +22,7 @@ class ColorsManegar {
     23,
   );
   static const Color lightGray = Colors.black54;
+  static const Color lightorange = Color(0xffFFEAEA);
   static const Color blueAccent = Colors.blueAccent;
   static const Color orangeAccent = Colors.orangeAccent;
   static const Color greenAccent = Colors.greenAccent;

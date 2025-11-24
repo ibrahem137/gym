@@ -6,7 +6,7 @@ import 'package:gym/features/checkin/ui/checkin_screen.dart';
 import 'package:gym/features/dashboard/ui/dashboard_screem.dart';
 import 'package:gym/features/members/ui/screens/members_screen.dart';
 import 'package:gym/features/reports/ui/reporst_screen.dart';
-import 'package:gym/features/settings/ui/settings_screen.dart';
+import 'package:gym/features/settings/ui/screens/settings_screen.dart';
 import 'package:gym/features/trainers/ui/screens/trainers_screen.dart';
 import 'package:sidebarx/sidebarx.dart';
 

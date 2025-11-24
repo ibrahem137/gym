@@ -9,7 +9,7 @@ import 'package:gym/features/trainers/ui/widgets/all_trainers_info_card.dart';
 import 'package:gym/features/trainers/ui/widgets/trainer_card.dart';
 
 class TrainersScreen extends StatelessWidget {
-  TrainersScreen({super.key});
+  const TrainersScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
