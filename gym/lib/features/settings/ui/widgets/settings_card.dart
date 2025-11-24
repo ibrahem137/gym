@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/app_shadow.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
+import 'package:gym/core/widgets/app_text_button.dart';
 import 'package:gym/features/settings/ui/widgets/settings_textform_fielf.dart';
 
 // ignore: must_be_immutable
@@ -22,7 +23,7 @@ class SettingsCard extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.all(8.0),
         width: double.infinity,
-        height: 400.h,
+        height: 480.h,
         decoration: BoxDecoration(
           boxShadow: AppShadows.bigOuterList,
           borderRadius: BorderRadius.circular(30),
@@ -90,6 +91,18 @@ class SettingsCard extends StatelessWidget {
                     hintText: "+1234567",
                   ),
                 ],
+              ),
+              SizedBox(height: 40.h),
+              Align(
+                alignment: Alignment.centerRight,
+                child: AppTextButton(
+                  buttonText: "Save Changes",
+                  textStyle: TextStyles.font13white800,
+                  onPressed: () {},
+                  buttonWidth: 160.w,
+                  buttonHeight: 50.h,
+                  borderRadius: 30,
+                ),
               ),
             ],
           ),

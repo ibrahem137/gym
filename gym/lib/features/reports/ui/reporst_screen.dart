@@ -7,6 +7,7 @@ class ReporstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //في ويدجت جاهزة بالكور فيا text headers مشان ما يتكررو لانو كلن نفس التصميم استعملا   بوساتي الك
       backgroundColor: ColorsManegar.backgroundcolor,
 
       body: Center(child: Text('reports screen')),
