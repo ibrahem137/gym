@@ -93,6 +93,16 @@ class TextStyles {
 
     color: ColorsManegar.grey,
   );
+  static TextStyle font16Blackbold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorsManegar.black,
+  );
+  static TextStyle font10Blackbold = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorsManegar.black,
+  );
 
   static var font24BlackBoldw400;
   static TextStyle font14grey600 = TextStyle(
