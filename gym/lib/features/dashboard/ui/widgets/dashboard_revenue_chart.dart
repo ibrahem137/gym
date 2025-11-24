@@ -39,10 +39,7 @@ class DashboardRevenueChart extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Monthly Revenue',
-                style: TextStyles.font16Blackbold,
-              ),
+              Text('Monthly Revenue', style: TextStyles.font16Blackbold),
               SizedBox(height: 20),
               SizedBox(
                 height: 300,
@@ -54,20 +51,17 @@ class DashboardRevenueChart extends StatelessWidget {
                     titlesData: FlTitlesData(
                       show: true,
                       rightTitles: AxisTitles(
-                        sideTitles: SideTitles(
-                          showTitles: false,
-                        ),
+                        sideTitles: SideTitles(showTitles: false),
                       ),
                       topTitles: AxisTitles(
-                        sideTitles: SideTitles(
-                          showTitles: false,
-                        ),
+                        sideTitles: SideTitles(showTitles: false),
                       ),
                       bottomTitles: AxisTitles(
                         sideTitles: SideTitles(
                           showTitles: true,
                           reservedSize: 30,
                           getTitlesWidget: (value, meta) {
+                            //
                             const months = [
                               'Jan',
                               'Feb',
@@ -83,15 +77,13 @@ class DashboardRevenueChart extends StatelessWidget {
                               'Dec',
                             ];
                             if (value.toInt() >= 0 &&
-                                value.toInt() <
-                                    months.length) {
+                                value.toInt() < months.length) {
                               return SideTitleWidget(
                                 axisSide: meta.axisSide,
                                 space: 8,
                                 child: Text(
                                   months[value.toInt()],
-                                  style:
-                                      TextStyles.font10Grey,
+                                  style: TextStyles.font10Grey,
                                 ),
                               );
                             }
@@ -107,8 +99,7 @@ class DashboardRevenueChart extends StatelessWidget {
                             if (value % 15000 == 0) {
                               return Text(
                                 '${(value / 1000).toInt()}k',
-                                style:
-                                    TextStyles.font10Grey,
+                                style: TextStyles.font10Grey,
                               );
                             }
                             return Container();
@@ -118,10 +109,7 @@ class DashboardRevenueChart extends StatelessWidget {
                     ),
                     borderData: FlBorderData(
                       show: true,
-                      border: Border.all(
-                        color: Colors.grey.shade300,
-                        width: 1,
-                      ),
+                      border: Border.all(color: Colors.grey.shade300, width: 1),
                     ),
                     lineBarsData: [
                       LineChartBarData(
@@ -129,12 +117,8 @@ class DashboardRevenueChart extends StatelessWidget {
                         isCurved: false,
                         barWidth: 3,
                         color: ColorsManegar.black,
-                        dotData: const FlDotData(
-                          show: true,
-                        ),
-                        belowBarData: BarAreaData(
-                          show: false,
-                        ),
+                        dotData: const FlDotData(show: true),
+                        belowBarData: BarAreaData(show: false),
                       ),
                     ],
                   ),

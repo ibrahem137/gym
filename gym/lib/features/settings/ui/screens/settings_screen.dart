@@ -1,10 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gym/core/theme/colors.dart';
-import 'package:gym/core/theme/styles.dart';
-import 'package:gym/core/widgets/home_texts_headers.dart';
-import 'package:gym/features/settings/ui/widgets/settings_card.dart';
-
 /*class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 

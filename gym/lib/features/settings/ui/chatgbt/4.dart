@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/features/settings/ui/chatgbt/1.dart';
 import 'package:gym/features/settings/ui/chatgbt/3.dart';
-import 'package:gym/features/settings/ui/widgets/settings_card.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});

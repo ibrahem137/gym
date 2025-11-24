@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gym/core/theme/app_shadow.dart';
 import 'package:gym/core/theme/colors.dart';
-import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/home_texts_headers.dart';
 import 'package:gym/features/members/ui/widgets/members_card.dart';
 import 'package:gym/features/members/ui/widgets/members_head_card.dart';
 import 'package:gym/features/members/ui/widgets/members_search_filed.dart';
-import 'package:gym/core/widgets/app_add_button.dart';
 
 class MembersScreen extends StatelessWidget {
   const MembersScreen({super.key});
