@@ -16,8 +16,7 @@ class DashboardScreem extends StatelessWidget {
         children: [
           SizedBox(height: 20.sp),
           Row(
-            mainAxisAlignment:
-                MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               DashboardInfoCards(
                 title: 'Total Active Members',

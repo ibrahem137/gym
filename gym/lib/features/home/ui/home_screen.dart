@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_sidebar.dart';
-import 'package:gym/features/checkin/ui/checkin_screen.dart';
+import 'package:gym/features/check_in/ui/checkin_screen.dart';
 import 'package:gym/features/dashboard/ui/dashboard_screem.dart';
 import 'package:gym/features/members/ui/screens/members_screen.dart';
 import 'package:gym/features/reports/ui/reporst_screen.dart';
+import 'package:gym/features/settings/ui/chatgbt/4.dart';
 import 'package:gym/features/settings/ui/screens/settings_screen.dart';
 import 'package:gym/features/trainers/ui/screens/trainers_screen.dart';
 import 'package:sidebarx/sidebarx.dart';
@@ -18,10 +19,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final _controller = SidebarXController(
-    selectedIndex: 0,
-    extended: true,
-  );
+  final _controller = SidebarXController(selectedIndex: 5, extended: true);
   final List<Widget> screens = [
     DashboardScreem(),
     MembersScreen(),
@@ -39,23 +37,14 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: ColorsManegar.backgroundcolor,
         elevation: 0,
         actions: [
-          Icon(
-            Icons.notifications_none_outlined,
-            color: ColorsManegar.grey,
-          ),
+          Icon(Icons.notifications_none_outlined, color: ColorsManegar.grey),
           SizedBox(width: 10),
-          Icon(
-            Icons.person_outline,
-            color: ColorsManegar.grey,
-          ),
+          Icon(Icons.person_outline, color: ColorsManegar.grey),
           SizedBox(width: 10),
         ],
         title: Row(
           children: [
-            Text(
-              'GymPro',
-              style: TextStyles.font13mainOrange600,
-            ),
+            Text('GymPro', style: TextStyles.font13mainOrange600),
             SizedBox(width: 20),
             Expanded(
               child: Container(
@@ -73,17 +62,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.search,
-                      size: 20,
-                    ),
+                    prefixIcon: Icon(Icons.search, size: 20),
                     labelText: 'Search',
-                    floatingLabelStyle:
-                        TextStyles.font10Grey,
+                    floatingLabelStyle: TextStyles.font10Grey,
                     border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(
-                      horizontal: 10,
-                    ),
+                    contentPadding: EdgeInsets.symmetric(horizontal: 10),
                   ),
                 ),
               ),

@@ -48,6 +48,11 @@ class TextStyles {
     fontSize: 14.sp,
     color: ColorsManegar.searchfieldtext,
   );
+  static TextStyle font13darkgraybold = TextStyle(
+    fontSize: 13.sp,
+    color: ColorsManegar.searchfieldtext,
+    fontWeight: FontWeight.bold,
+  );
 
   static TextStyle font13Blackw600 = TextStyle(
     fontSize: 13.sp,
@@ -85,9 +90,7 @@ class TextStyles {
     color: ColorsManegar.backgroundcolor,
   );
 
-  static TextStyle font32BlueBold = TextStyle(
-    fontSize: 32.sp,
-  );
+  static TextStyle font32BlueBold = TextStyle(fontSize: 32.sp);
   static TextStyle font40Orange = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,
