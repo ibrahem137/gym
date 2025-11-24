@@ -5,6 +5,7 @@ import 'package:gym/features/auth/ui/screens/login_screen.dart';
 import 'package:gym/features/auth/ui/screens/register_screen.dart';
 import 'package:gym/features/home/ui/home_screen.dart';
 import 'package:gym/features/members/ui/screens/members_screen.dart';
+import 'package:gym/features/settings/ui/chatgbt/4.dart';
 import 'package:gym/features/settings/ui/screens/settings_screen.dart';
 
 class AppRouter {

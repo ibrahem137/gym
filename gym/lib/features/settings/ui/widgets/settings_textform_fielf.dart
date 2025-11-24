@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/app_shadow.dart';
 import 'package:gym/core/theme/colors.dart';
@@ -11,6 +11,8 @@ class SettingsTextformFielf extends StatelessWidget {
     super.key,
     required this.hintText,
     required this.headerText,
+    TextInputType? keyboardType,
+    Widget? suffixIcon,
   });
 
   @override
@@ -52,4 +54,4 @@ class SettingsTextformFielf extends StatelessWidget {
       ],
     );
   }
-}
+}*/

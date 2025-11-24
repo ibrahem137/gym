@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/app_shadow.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_text_button.dart';
+import 'package:gym/features/settings/ui/chatgbt/1.dart';
 import 'package:gym/features/settings/ui/widgets/settings_textform_fielf.dart';
 
 // ignore: must_be_immutable
@@ -14,6 +15,10 @@ class SettingsCard extends StatelessWidget {
     super.key,
     required this.backgroundColorAvatar,
     required this.iconAvatar,
+    required String title,
+    required String subtitle,
+    required Null Function() onSave,
+    required List<List<SettingsFieldModel>> rows,
   });
 
   @override
@@ -110,4 +115,4 @@ class SettingsCard extends StatelessWidget {
       ),
     );
   }
-}
+}*/
