@@ -3,7 +3,7 @@ import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_sidebar.dart';
 import 'package:gym/features/check_in/ui/checkin_screen.dart';
-import 'package:gym/features/dashboard/ui/dashboard_screem.dart';
+import 'package:gym/features/dashboard/ui/dashboard_screen.dart';
 import 'package:gym/features/members/ui/screens/members_screen.dart';
 import 'package:gym/features/reports/ui/reporst_screen.dart';
 import 'package:gym/features/settings/ui/screens/settings_screen.dart';
@@ -20,7 +20,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final _controller = SidebarXController(selectedIndex: 0, extended: true);
   final List<Widget> screens = [
-    DashboardScreem(),
+    DashboardScreen(),
     MembersScreen(),
     CheckinScreen(),
     TrainersScreen(),
