@@ -9,8 +9,18 @@ class ColorsManegar {
   static const Color backgroundcolor = Colors.white;
   static const Color black = Colors.black;
   static const Color grey = Colors.grey;
-  static const Color shadowColor = Color.fromARGB(0, 255, 0, 0);
-  static const Color searchfieldtext = Color.fromARGB(255, 23, 23, 23);
+  static const Color shadowColor = Color.fromARGB(
+    0,
+    255,
+    0,
+    0,
+  );
+  static const Color searchfieldtext = Color.fromARGB(
+    255,
+    23,
+    23,
+    23,
+  );
   static const Color lightGray = Colors.black54;
   static const Color lightorange = Color(0xffFFEAEA);
   static const Color blueAccent = Colors.blueAccent;
@@ -18,4 +28,8 @@ class ColorsManegar {
   static const Color greenAccent = Colors.greenAccent;
   static const Color purpleAccent = Colors.purpleAccent;
   static Color blueShade50 = Colors.blue.shade50;
+  static Color green = Colors.green;
+  static Color orange = Colors.orange;
+  static Color red = Colors.red;
+  static Color black87 = Colors.black87;
 }
