@@ -26,8 +26,32 @@ class AppShadows {
     offset: Offset(0, 0),
   );
 
+  static final BoxShadow cardDefault = BoxShadow(
+    color: Colors.black12, // Colors.black12
+    blurRadius: 8,
+    spreadRadius: 1,
+    offset: Offset(0, 3),
+  );
+
+  // 👇 الظل عند التحويم بالكارت (حالة _isHovered = true)
+  static final BoxShadow cardHover = BoxShadow(
+    color: Colors.black26, // Colors.black26
+    blurRadius: 20,
+    spreadRadius: 2,
+    offset: Offset(0, 8),
+  );
+  static final BoxShadow chartShadow = BoxShadow(
+    color: Colors.black12, // Colors.black12
+    blurRadius: 8,
+    spreadRadius: 1,
+    offset: Offset(0, 3),
+  );
+
   /// لو بدك تستخدم الشادو بقائمة (BoxShadow[])
   static List<BoxShadow> outerList = [outer];
   static List<BoxShadow> bigOuterList = [bigOuter];
   static List<BoxShadow> innerList = [inner];
+  static List<BoxShadow> cardDefaultList = [cardDefault];
+  static List<BoxShadow> cardHoverList = [cardHover];
+  static List<BoxShadow> chartShadowList = [chartShadow];
 }
