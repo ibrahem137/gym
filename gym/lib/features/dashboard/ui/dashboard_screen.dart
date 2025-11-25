@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/features/dashboard/ui/widgets/cards/build_info_cards_row.dart';
 import 'package:gym/features/dashboard/ui/widgets/charts/build_charts_row.dart';
+import 'package:gym/features/dashboard/ui/widgets/members_table/members_table_card.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -22,6 +23,8 @@ class DashboardScreen extends StatelessWidget {
             BuildInfoCardsRow(),
             SizedBox(height: 50.h),
             BuildChartsRow(),
+            SizedBox(height: 50.h),
+            MembersTableCard(),
           ],
         ),
       ),
