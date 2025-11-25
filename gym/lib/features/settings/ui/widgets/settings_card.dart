@@ -4,7 +4,7 @@ import 'package:gym/core/theme/app_shadow.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_text_button.dart';
-import 'package:gym/features/settings/ui/chatgbt/settings_field_model.dart.dart';
+import 'package:gym/features/settings/ui/widgets/settings_field_model.dart.dart';
 
 class SettingsCard extends StatelessWidget {
   final Color backgroundColorAvatar;

@@ -5,7 +5,7 @@ import 'package:gym/features/auth/ui/screens/login_screen.dart';
 import 'package:gym/features/auth/ui/screens/register_screen.dart';
 import 'package:gym/features/home/ui/home_screen.dart';
 import 'package:gym/features/members/ui/screens/members_screen.dart';
-import 'package:gym/features/settings/ui/chatgbt/settings_screen.dart';
+import 'package:gym/features/settings/ui/screens/settings_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
