@@ -5,7 +5,6 @@ import 'package:gym/features/dashboard/ui/widgets/charts/subscriptions_bar_chart
 
 class BuildChartsRow extends StatelessWidget {
   const BuildChartsRow({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Row(
