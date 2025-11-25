@@ -1,118 +1,95 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/theme/app_shadow.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
 import 'package:gym/core/widgets/app_text_button.dart';
-import 'package:gym/features/settings/ui/chatgbt/1.dart';
-import 'package:gym/features/settings/ui/widgets/settings_textform_fielf.dart';
+import 'package:gym/features/settings/ui/widgets/settings_field_model.dart.dart';
 
-// ignore: must_be_immutable
 class SettingsCard extends StatelessWidget {
-  Color backgroundColorAvatar;
-  Icon iconAvatar;
-  SettingsCard({
+  final Color backgroundColorAvatar;
+  final Widget iconAvatar;
+  final String title;
+  final String subtitle;
+  final VoidCallback onSave;
+  final List<List<SettingsFieldModel>> rows;
+  final String buttonText;
+
+  const SettingsCard({
     super.key,
     required this.backgroundColorAvatar,
     required this.iconAvatar,
-    required String title,
-    required String subtitle,
-    required Null Function() onSave,
-    required List<List<SettingsFieldModel>> rows,
+    required this.title,
+    required this.subtitle,
+    required this.onSave,
+    required this.rows,
+    required this.buttonText,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(12.0),
-      child: Container(
-        margin: const EdgeInsets.all(8.0),
-        width: double.infinity,
-        height: 480.h,
-        decoration: BoxDecoration(
-          boxShadow: AppShadows.bigOuterList,
-          borderRadius: BorderRadius.circular(30),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+    return Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: ColorsManegar.backgroundcolor,
+        borderRadius: BorderRadius.circular(35),
+        boxShadow: [AppShadows.bigOuter],
+      ),
 
+      child: Column(
+        children: [
+          /// HEADER card
+          Row(
             children: [
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 20,
-                    backgroundColor: backgroundColorAvatar,
-                    child: iconAvatar,
-                  ),
-                  SizedBox(width: 10.w),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(height: 10.h),
-                      Text(
-                        'Profile Settings',
-                        style: TextStyles.font16Blackw600real,
-                      ),
-                      SizedBox(height: 2.h),
-                      Text(
-                        'Update your personal information',
-                        style: TextStyle(
-                          fontSize: 14.sp,
-                          color: ColorsManegar.lightGray,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
+              CircleAvatar(
+                radius: 24.r,
+                backgroundColor: backgroundColorAvatar,
+                child: iconAvatar,
               ),
-              //-----------------------------------------textformfields------------------------------------
-              SizedBox(height: 30.h),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              SizedBox(width: 15.w),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SettingsTextformFielf(
-                    headerText: "First Name",
-                    hintText: "Joun",
-                  ),
-                  SettingsTextformFielf(
-                    headerText: "Last Name ",
-                    hintText: "Deo",
-                  ),
+                  Text(title, style: TextStyles.font16Blackw600real),
+                  SizedBox(height: 4.h),
+                  Text(subtitle, style: TextStyles.font12grey),
                 ],
-              ),
-              SizedBox(height: 15.h),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SettingsTextformFielf(
-                    headerText: "Email",
-                    hintText: "joun@example.com",
-                  ),
-                  SettingsTextformFielf(
-                    headerText: "Phone Number",
-                    hintText: "+1234567",
-                  ),
-                ],
-              ),
-              SizedBox(height: 40.h),
-              Align(
-                alignment: Alignment.centerRight,
-                child: AppTextButton(
-                  buttonText: "Save Changes",
-                  textStyle: TextStyles.font13white800,
-                  onPressed: () {},
-                  buttonWidth: 160.w,
-                  buttonHeight: 50.h,
-                  borderRadius: 30,
-                ),
               ),
             ],
           ),
-        ),
+
+          SizedBox(height: 20.h),
+
+          /// Smart FIELDS
+          Column(
+            children:
+                rows.map((row) {
+                  return Padding(
+                    padding: EdgeInsets.only(bottom: 19.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: row.map((e) => e.build()).toList(),
+                    ),
+                  );
+                }).toList(),
+          ),
+
+          SizedBox(height: 10.h),
+
+          /// BUTTON
+          Align(
+            alignment: Alignment.bottomRight,
+            child: AppTextButton(
+              buttonText: buttonText,
+              textStyle: TextStyles.font14white600,
+              onPressed: () {},
+              buttonWidth: 120.w,
+              buttonHeight: 12.h,
+              borderRadius: 30,
+            ),
+          ),
+        ],
       ),
     );
   }
-}*/
+}

@@ -106,6 +106,10 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: ColorsManegar.black,
   );
+  static TextStyle font12grey = TextStyle(
+    fontSize: 12.sp,
+    color: ColorsManegar.grey,
+  );
   static TextStyle font10Blackbold = TextStyle(
     fontSize: 10.sp,
     fontWeight: FontWeight.bold,
