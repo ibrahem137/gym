@@ -2,7 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:gym/core/theme/colors.dart';
 import 'package:gym/core/theme/styles.dart';
-import 'package:gym/features/dashboard/ui/widgets/chart_card_container.dart';
+import 'package:gym/features/dashboard/ui/widgets/charts/chart_card_container.dart';
 
 class RevenueLineChart extends StatelessWidget {
   static const List<FlSpot> _revenueData = [
