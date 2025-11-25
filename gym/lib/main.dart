@@ -4,5 +4,4 @@ import 'package:gym/gym_app.dart';
 
 void main() {
   runApp(GymApp(appRouter: AppRouter()));
-
 }
