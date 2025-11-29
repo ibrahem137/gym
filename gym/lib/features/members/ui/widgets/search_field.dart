@@ -16,12 +16,15 @@ class SearchField extends StatelessWidget {
         ),
         child: TextField(
           decoration: InputDecoration(
-            prefixIcon: Icon(Icons.search, color: Colors.grey[600]),
+            prefixIcon: Icon(
+              Icons.search,
+              color: Colors.grey[600],
+            ),
 
             border: InputBorder.none,
-            hintText: 'Search members by name, email, or phone...',
+            hintText:
+                'Search members by name, email, or phone...',
             hintStyle: TextStyles.font14darkgraynormal,
-            contentPadding: EdgeInsets.fromLTRB(16, 0, 16, 12),
           ),
         ),
       ),
