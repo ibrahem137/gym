@@ -12,7 +12,10 @@ class OneMemberRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+      padding: const EdgeInsets.symmetric(
+        vertical: 14,
+        horizontal: 16,
+      ),
       child: Row(
         children: [
           Expanded(
@@ -22,10 +25,17 @@ class OneMemberRow extends StatelessWidget {
                 MemberImage(memberName: member.name),
                 SizedBox(width: 10),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment:
+                      CrossAxisAlignment.start,
                   children: [
-                    Text(member.name, style: TextStyles.font17Blackw600),
-                    Text("ID: ${member.id}", style: TextStyles.font13Blackw600),
+                    Text(
+                      member.name,
+                      style: TextStyles.font17Blackw600,
+                    ),
+                    Text(
+                      "IDmnsd,: ${member.id}",
+                      style: TextStyles.font13Blackw600,
+                    ),
                   ],
                 ),
               ],
@@ -38,8 +48,14 @@ class OneMemberRow extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(member.email, style: TextStyles.font13Blackw600),
-                Text(member.phone, style: TextStyles.font13Blackw600),
+                Text(
+                  member.email,
+                  style: TextStyles.font13Blackw600,
+                ),
+                Text(
+                  member.phone,
+                  style: TextStyles.font13Blackw600,
+                ),
               ],
             ),
           ),
@@ -47,7 +63,10 @@ class OneMemberRow extends StatelessWidget {
           // ---------------- STATUS ----------------
           Container(
             width: 70.w,
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 12,
+              vertical: 6,
+            ),
             decoration: BoxDecoration(
               color: getStatusColor(member),
               borderRadius: BorderRadius.circular(20),
@@ -63,13 +82,19 @@ class OneMemberRow extends StatelessWidget {
           // ---------------- JOIN DATE ----------------
           Expanded(
             flex: 2,
-            child: Text(member.joinDate, style: TextStyles.font13Blackw600),
+            child: Text(
+              member.joinDate,
+              style: TextStyles.font13Blackw600,
+            ),
           ),
 
           // ---------------- EXPIRY DATE ----------------
           Expanded(
             flex: 2,
-            child: Text(member.expiryDate, style: TextStyles.font13Blackw600),
+            child: Text(
+              member.expiryDate,
+              style: TextStyles.font13Blackw600,
+            ),
           ),
 
           // ---------------- ACTIONS ----------------
